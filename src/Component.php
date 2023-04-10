@@ -8,7 +8,7 @@ class Component
     {
         error_reporting(E_ALL);
         ini_set("display_errors", 1);
-        include("file_with_errors.php");
+        ini_set('display_startup_errors', TRUE);
     }
 
     public function __destruct(){
